@@ -1,9 +1,7 @@
 import type { NightDigest } from '../digest/types.js';
 
 export function DigestPage({ digest }: { digest: NightDigest }) {
-  const rows = [...digest.rows].sort((a, b) =>
-    a.job < b.job ? -1 : a.job > b.job ? 1 : 0,
-  );
+  const rows = digest.rows;
 
   return (
     <>
