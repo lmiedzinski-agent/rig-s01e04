@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-11-02
 ---
 
 # Morning digest
@@ -77,3 +78,22 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| Issue | Section | State |
+|---|---|---|
+| [#1 Digest types](https://github.com/lmiedzinski-agent/rig-s01e04/issues/1) | 1 | completed |
+| [#2 Run log reader](https://github.com/lmiedzinski-agent/rig-s01e04/issues/2) | 1 | completed |
+| [#3 Digest page](https://github.com/lmiedzinski-agent/rig-s01e04/issues/3) | 2a | completed |
+| [#4 JSON route](https://github.com/lmiedzinski-agent/rig-s01e04/issues/4) | 2b | completed |
+| [#5 Board links](https://github.com/lmiedzinski-agent/rig-s01e04/issues/5) | 2c | completed |
+| [#6 Route tests](https://github.com/lmiedzinski-agent/rig-s01e04/issues/6) | 2d | completed |
+| [#7 Review preview](https://github.com/lmiedzinski-agent/rig-s01e04/issues/7) | 3 | completed |
+| [#8 Cleanup](https://github.com/lmiedzinski-agent/rig-s01e04/issues/8) | 4 | completed |
+
+The course reviewer confirmed the preview was seen before cleanup. The preview issue was reopened after an early closure and closed again after that confirmation.
+
+The public preview at https://mega.cutt.ovh/digest.html was replaced with a fresh export with `LANE_MARKER` unset. Public HTTPS returned the same bytes as the marker-free local export and showed “no marker set.”
+
+Validation: 63 tests passed; TypeScript check passed. The run fixtures remain unchanged.
